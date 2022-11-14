@@ -28,7 +28,7 @@ const Carrusel = () => {
         
           return (
             <>
-            <div className= " d-flex  justify-content-center align-items: center">
+            <div className= " d-flex  justify-content-center ">
             <Carousel  style={{ width: '44rem' }}>
             {imagenes.map((imagen) => (
               
@@ -39,10 +39,7 @@ const Carrusel = () => {
                   src={imagen.imagen}
                   alt="First slide"
                 />
-                <Carousel.Caption>
-                  <h3>{imagen.titulo}</h3>
-                  
-                </Carousel.Caption>
+                
               </Carousel.Item>
               
             ))}
